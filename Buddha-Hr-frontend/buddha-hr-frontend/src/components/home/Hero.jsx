@@ -1,6 +1,6 @@
 import Button from "../common/Button";
 import Container from "../common/Container";
-import heroImage from "../../assets/images/hero.png";
+import heroImage from "../../assets/images/herosection.png";
 import { Link } from "react-router-dom";
 
 function Hero() {
@@ -59,11 +59,11 @@ function Hero() {
           </div>
 
           {/* Right Image */}
-          <div>
+          <div className="flex h-full w-170">
             <img
               src={heroImage}
               alt="Recruitment"
-              className="w-full rounded-3xl shadow-2xl"
+              className="h-120 w-full rounded-3xl shadow-2xl"
             />
           </div>
         </div>
