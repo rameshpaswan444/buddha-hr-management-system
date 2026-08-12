@@ -49,7 +49,7 @@ public class SecurityConfig {
 //        configuration.setAllowedOrigins(List.of("http://localhost:5173"));
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:5173",
-                "https://buddha-hr-management-system.vercel.app"
+                "https://buddha-human-site.vercel.app/"
         ));
 
         configuration.setAllowedMethods(List.of(
