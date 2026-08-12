@@ -96,6 +96,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
 
                         .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/api/users/register").permitAll()
                         .requestMatchers("/uploads/company/**").permitAll()
                         .requestMatchers("/uploads/resumes/**").permitAll()
 
