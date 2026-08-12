@@ -98,6 +98,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/api/jobs/**").permitAll()
 
                         .requestMatchers("/api/dashboard/**").hasRole("ADMIN")
+                        .requestMatchers("/").permitAll()
 
                         .anyRequest().authenticated()
                 )
@@ -107,9 +108,10 @@ public class SecurityConfig {
                 .addFilterBefore(
                         jwtAuthenticationFilter,
                         UsernamePasswordAuthenticationFilter.class
-                )
+                );
 
-                .httpBasic(Customizer.withDefaults());
+
+               
 
         return http.build();
     }
